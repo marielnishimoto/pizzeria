@@ -1,12 +1,13 @@
 
 export interface Feedback{
-firstname: String;
-lastname: String;
-telnum: String;
-email: String;
-contacttype: String;
-massage: String;
-agree: Boolean;
-}
+firstname:string;
+lastname:string;
+telnum:string;
+email:string;
+contacttype:string;
+message:string;
+agree:boolean;
 
+
+}
 export const ContactType =['None','Tel','Email'];

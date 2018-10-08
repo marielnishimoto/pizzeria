@@ -1,9 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+
+import { Observable }from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
-import {dbURL} from '../Shared/dbURL'
-import {Leader} from '../Shared/Leader';
+
+import { Leader } from '../../shared/leader';
+import { dbURL } from '../../shared/dburl';
 
 /*
   Generated class for the LeaderProvider provider.
@@ -18,6 +20,16 @@ export class LeaderProvider {
     console.log('Hello LeaderProvider Provider');
   }
 
-  
 
+    getLeaders(): Observable<Leader[]>{
+  	return this.http.get<Leader[]>(dbURL + 'leaders/').map(
+  		res => res);
+  }
+
+getFeaturedLeader(): Observable<leader>{
+	return this.http.get<Leader>(dbURL + 'leaders?featured=true').map( 
+res => res
+);
+
+}
 }
