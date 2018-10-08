@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { DishProvider } from '../../providers/dish/dish';
 import { Dish } from '../../shared/dish';
+import {DishdetailPage} from '../dishdetail/dishdetail'
 
 /**
  * Generated class for the MenuPage page.
