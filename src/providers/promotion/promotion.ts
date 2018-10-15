@@ -6,6 +6,7 @@ import 'rxjs/add/operator/map';
 
 import { Promotion } from '../../shared/promotion';
 import { dbURL } from '../../shared/dburl';
+import { Dish } from '../../shared/dish';
 /*
   Generated class for the PromotionProvider provider.
 
