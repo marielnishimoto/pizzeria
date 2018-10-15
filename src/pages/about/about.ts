@@ -16,7 +16,7 @@ import { Leader } from '../../shared/leader';
 })
 export class AboutPage {
 
-leaders:leader[];
+leaders:Leader[];
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private leaderService: LeaderProvider) {
