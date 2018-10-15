@@ -24,7 +24,8 @@ averageRat: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
   	@Inject('DbURL') private dBURL ) {
-  
+  this.dish = this.navParams.get("dish");
+  console.log(this.dish);
   }
 
   ionViewDidLoad() {

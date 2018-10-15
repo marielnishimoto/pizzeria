@@ -26,7 +26,7 @@ export class LeaderProvider {
   		res => res);
   }
 
-getFeaturedLeader(): Observable<Leader>{
+getFeaturedLeader(): Observable<leader>{
 	return this.http.get<Leader>(dbURL + 'leaders?featured=true').map( 
 res => res
 );

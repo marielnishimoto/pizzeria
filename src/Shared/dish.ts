@@ -1,4 +1,4 @@
-import {Comment} from'./comment';
+import {Comment} from'./comment.ts';
 export interface Dish{
 	id:number;
 	name:string;
